@@ -1,12 +1,13 @@
-let player = Math.random()* 6 + 1;
+let player =Math.floor(Math.random()* 6 + 1);
 console.log(player);
-let computer = Math.random()* 6 + 1;
+let computer =Math.floor(Math.random()* 6 + 1);
 console.log(computer);
 
 if(player> computer){
     console.log('HAI VINTO PLAYER');
-    console.log('HAI PERSO COMPUTER')
-}else{
-    console.log('HAI VINTO COMPUTER');
-    console.log('HAI PERSO PLAYER');
-}
+    }else if(computer>player){
+        console.log('HAI VINTO COMPUTER');
+    }
+    else{
+        console.log('PARI');
+    }
